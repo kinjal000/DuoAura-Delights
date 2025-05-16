@@ -80,8 +80,9 @@ Offer Page
 About Page
 <img width="1470" alt="Screenshot 2025-05-16 at 10 18 35 PM" src="https://github.com/user-attachments/assets/37e31a6f-1165-4a49-8373-1bc0210734f0" />
 <img width="1470" alt="Screenshot 2025-05-16 at 10 18 51 PM" src="https://github.com/user-attachments/assets/615fe246-c43b-4b86-b9f8-6237697626d9" />
-<img width="1470" alt="Screenshot 2025-05-16 at 10 20 48 PM" src="https://github.com/user-attachments/assets/c8af623f-b0d2-4c8f-be5f-3fa91586c59e" />
 <img width="1470" alt="Screenshot 2025-05-16 at 10 20 36 PM" src="https://github.com/user-attachments/assets/eb69369a-6967-4341-8b3b-d7bd9331513a" />
+<img width="1470" alt="Screenshot 2025-05-16 at 10 20 48 PM" src="https://github.com/user-attachments/assets/c8af623f-b0d2-4c8f-be5f-3fa91586c59e" />
+
 
 Contact Page
 <img width="1470" alt="Screenshot 2025-05-16 at 10 05 51 PM" src="https://github.com/user-attachments/assets/c63aae3c-febf-412f-8c6c-85104a5b99e3" />
