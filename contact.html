@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us - DuoAura Delights</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    :root {
+      --soft-pink: #F4C6D4;
+      --pastel-peach: #F9D2B8;
+      --chocolate-brown: #4A2C26;
+      --mint-green: #C2E2C4;
+      --cream-white: #F8F6F3;
+      --lemon-yellow: #FBE49D;
+      --berry-purple: #7D3250;
+      --vanilla-cream: #F3E1CE;
+      --olive-green: #65795A;
+      --dusty-rose: #D6A7B1;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Quicksand', sans-serif;
+      background-color: var(--cream-white);
+      color: var(--chocolate-brown);
+    }
+
+    h1, h2, h3, h4 {
+      font-family: 'Playfair Display', serif;
+      margin: 0;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+      border-radius: 8px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+
+    header {
+      background: var(--cream-white);
+      padding: 1rem 0;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      font-weight: 600;
+      font-size: 0.95rem;
+      color: var(--chocolate-brown);
+    }
+
+    nav a:hover {
+      color: var(--berry-purple);
+      text-decoration: underline;
+      transform: scale(1.05);
+      transition: all 0.3s ease;
+    }
+
+    .contact-container {
+      max-width: 900px;
+      margin: 40px auto;
+      background-color: var(--vanilla-cream);
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 8px 20px var(--dusty-rose);
+    }
+
+    .contact-container h1 {
+      text-align: center;
+      color: var(--berry-purple);
+    }
+
+    .contact-container p {
+      text-align: center;
+      font-size: 1.1em;
+      color: var(--olive-green);
+    }
+
+    .contact-details {
+      margin-top: 30px;
+      background-color: var(--vanilla-cream);
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .contact-details h2 {
+      color: var(--berry-purple);
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    .contact-details p {
+      margin: 8px 0;
+    }
+
+    .contact-details a {
+      color: var(--berry-purple);
+      text-decoration: none;
+    }
+
+    .contact-details a:hover {
+      text-decoration: underline;
+    }
+
+    form {
+      margin-top: 40px;
+    }
+
+    fieldset {
+      border: 2px solid var(--dusty-rose);
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    legend {
+      font-weight: bold;
+      color: var(--berry-purple);
+      font-size: 1.2em;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      color: var(--chocolate-brown);
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid var(--pastel-peach);
+      border-radius: 5px;
+      font-size: 1em;
+    }
+
+    button {
+      margin-top: 20px;
+      background-color: var(--berry-purple);
+      color: var(--lemon-yellow);
+      border: none;
+      padding: 12px 20px;
+      font-size: 1em;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: var(--olive-green);
+      color: white;
+    }
+
+    @media (max-width: 600px) {
+      .contact-container {
+        margin: 20px;
+        padding: 20px;
+      }
+    }
+
+    footer {
+      margin-top: 4rem;
+      padding: 2rem 0;
+      text-align: center;
+      background: var(--vanilla-cream);
+      color: var(--berry-purple);
+      font-family: 'Playfair Display', serif;
+    }
+
+    .social-icons {
+      margin-top: 1rem;
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+    }
+
+    .social-icons a {
+      color: white;
+      font-size: 1.3rem;
+      transition: color 0.3s ease;
+    }
+
+    .social-icons a:hover {
+      color: var(--soft-pink);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header>
+    <nav class="container">
+      <a href="home.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="offer.html">Offers</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Contact Section -->
+  <div class="contact-container">
+    <h1>Contact Us</h1>
+    <p>Have a question, feedback, or just want to say hello? We’d love to hear from you!</p>
+
+    <!-- Contact Details -->
+    <div class="contact-details">
+      <h2>Get in Touch</h2>
+      <p><strong>📞 Phone:</strong> <a href="tel:+911234567890">+91 12345 67890</a></p>
+      <p><strong>📧 Email:</strong> <a href="mailto:hello@duoaura.com">hello@duoaura.com</a></p>
+      <p><strong>🏠 Address:</strong> 123 Blissful Lane, Sweet City, India - 560001</p>
+      <p><strong>⏰ Store Hours:</strong> Mon - Sun: 10 AM – 8 PM</p>
+    </div>
+
+    <!-- Contact Form -->
+    <form id="contactForm">
+      <fieldset>
+        <legend>Send us a message</legend>
+
+        <label for="name">Your Name *</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Your Email *</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="phone">Phone Number (Optional)</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="10-digit number" />
+
+        <label for="message">Message *</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </fieldset>
+    </form>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>©️ 2025 DuoAura Delight. All Rights Reserved.</p>
+    <div class="social-icons" role="navigation" aria-label="Social media links">
+      <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+      <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+    </div>
+  </footer>
+
+  <!-- JavaScript Validation -->
+  <script>
+    document.getElementById("contactForm").addEventListener("submit", function (e) {
+      const name = document.getElementById("name");
+      const email = document.getElementById("email");
+      const phone = document.getElementById("phone");
+      const message = document.getElementById("message");
+  
+      let valid = true;
+  
+      // Improved email regex that allows subdomains and special characters
+      let emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+      let phoneRegex = /^[0-9]{10}$/;
+  
+      // Reset border colors
+      [name, email, phone, message].forEach(field => field.style.borderColor = "#ccc");
+  
+      if (name.value.trim() === "") {
+        name.style.borderColor = "red";
+        valid = false;
+      }
+  
+      if (!emailRegex.test(email.value.trim())) {
+        email.style.borderColor = "red";
+        valid = false;
+      }
+  
+      if (phone.value.trim() !== "" && !phoneRegex.test(phone.value.trim())) {
+        phone.style.borderColor = "red";
+        valid = false;
+      }
+  
+      if (message.value.trim() === "") {
+        message.style.borderColor = "red";
+        valid = false;
+      }
+  
+      if (!valid) {
+        alert("Please correct the highlighted fields.");
+        e.preventDefault();
+      } else {
+        alert("Thank you for contacting us! We’ll get back to you soon.");
+      }
+    });
+  </script>
+  
+
+</body>
+</html>

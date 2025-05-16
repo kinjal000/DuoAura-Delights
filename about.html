@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Us - DuoAura Delights</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --soft-pink: #F4C6D4;
+      --pastel-peach: #F9D2B8;
+      --chocolate-brown: #4A2C26;
+      --cream-white: #F8F6F3;
+      --berry-purple: #7D3250;
+      --vanilla-cream: #F3E1CE;
+      --dusty-rose: #D6A7B1;
+      --olive-green: #556B2F;
+      --light-shadow: rgba(0, 0, 0, 0.1);
+      --dark-shadow: rgba(0, 0, 0, 0.15);
+    }
+    body {
+        
+      margin: 0;
+      font-family: 'Quicksand', sans-serif;
+      background-color: var(--cream-white);
+      color: var(--chocolate-brown);
+      line-height: 1.6;
+      padding: 0px;
+      scroll-behavior: smooth;
+    }
+    /* Navigation Bar */
+    
+h1, h2, h3, h4 {
+      font-family: 'Playfair Display', serif;
+      margin: 0;
+    }
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+    img {
+      max-width: 100%;
+      display: block;
+      border-radius: 8px;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+header {
+      background: var(--cream-white);
+      padding: 1rem 0;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      font-weight: 600;
+      font-size: 0.95rem;
+      color: var(--chocolate-brown);
+      /* background-color: #F4C6D4; */
+    }
+    nav a:hover {
+  color: var(--berry-purple);
+  text-decoration: underline;
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
+    /* Content Container */
+    .about-content {
+      max-width: 900px;
+      margin: 40px auto 60px;
+      background-color: var(--vanilla-cream);
+      padding: 30px 40px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px var(--dark-shadow);
+      border: 1px solid var(--dusty-rose);
+      text-align: justify;
+      transition: box-shadow 0.3s ease;
+    }
+    .about-content:hover {
+      box-shadow: 0 12px 30px var(--dusty-rose);
+    }
+
+    h1 {
+      color: var(--berry-purple);
+      font-size: 2.8rem;
+      margin-bottom: 25px;
+      text-align: center;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+    }
+    h2 {
+      color: var(--olive-green);
+      margin-top: 40px;
+      margin-bottom: 15px;
+      font-size: 2rem;
+      border-bottom: 3px solid var(--soft-pink);
+      padding-bottom: 6px;
+    }
+    p {
+      margin-bottom: 20px;
+      font-size: 1.15rem;
+    }
+
+    /* Founders Section */
+    .founders {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      margin-top: 50px;
+      flex-wrap: wrap;
+    }
+    .founder {
+      background-color: var(--vanilla-cream);
+      border-radius: 12px;
+      padding: 20px;
+      width: 280px;
+      box-shadow: 0 6px 15px var(--dusty-rose);
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .founder:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 25px var(--dusty-rose);
+    }
+    .founder img {
+  display: block;       /* already hai */
+  margin: 0 auto 15px;  /* top 0, horizontal auto, bottom 15px */
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid var(--berry-purple);
+  box-shadow: 0 4px 10px var(--dusty-rose);
+  transition: transform 0.3s ease;
+}
+
+    
+    .founder img:hover {
+      transform: scale(1.05);
+    }
+    .founder h3 {
+      color: var(--berry-purple);
+      margin-bottom: 8px;
+      font-size: 1.4rem;
+      font-weight: 700;
+    }
+    .founder p {
+      font-size: 1rem;
+      color: var(--chocolate-brown);
+      line-height: 1.4;
+    }
+
+    /* Values Section */
+    .values {
+      background-color: var(--vanilla-cream);
+      padding: 30px 40px;
+      border-radius: 12px;
+      max-width: 900px;
+      margin: 60px auto;
+      box-shadow: 0 8px 20px var(--dusty-rose);
+    }
+    .values h2 {
+      color: var(--berry-purple);
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 2.2rem;
+    }
+    .values-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 30px;
+    }
+    .value-item {
+      background: var(--vanilla-cream);
+      border: 2px solid var(--dusty-rose);
+      border-radius: 10px;
+      padding: 20px;
+      flex: 1 1 250px;
+      box-shadow: 0 4px 8px var(--dusty-rose);
+      transition: background-color 0.3s ease;
+    }
+    .value-item:hover {
+      background-color: var(--soft-pink);
+    }
+    .value-item h3 {
+      margin-bottom: 10px;
+      color: var(--olive-green);
+      font-size: 1.3rem;
+      font-weight: 600;
+    }
+    .value-item p {
+      font-size: 1rem;
+      color: var(--chocolate-brown);
+    }
+
+    /* Testimonials Section */
+    .testimonials {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 30px 40px;
+      background-color: var(--vanilla-cream);
+      border-radius: 12px;
+      box-shadow: 0 8px 20px var(--dusty-rose);
+      border: 1px solid var(--dusty-rose);
+    }
+    .testimonials h2 {
+      color: var(--berry-purple);
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 2.2rem;
+    }
+    .testimonial-item {
+      font-style: italic;
+      margin-bottom: 25px;
+      font-size: 1.1rem;
+      position: relative;
+      padding-left: 30px;
+    }
+    .testimonial-item::before {
+      content: "“";
+      font-size: 3rem;
+      color: var(--soft-pink);
+      position: absolute;
+      left: 0;
+      top: -10px;
+    }
+    .testimonial-author {
+      text-align: right;
+      font-weight: 700;
+      color: var(--olive-green);
+      font-size: 1rem;
+      margin-top: 5px;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .founders {
+        flex-direction: column;
+        align-items: center;
+      }
+      .value-item {
+        flex: 1 1 100%;
+      }
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+      nav ul li {
+        margin: 10px 0;
+      }
+    }
+    footer {
+    margin-top: 4rem;
+    padding: 2rem 0;
+    text-align: center;
+    background: var(--vanilla-cream);
+    color: var(--berry-purple);
+    font-family: 'Playfair Display', serif;
+    width: 100%; /* Full width */
+    position: relative; /* Ensure it stays within the flow */
+    left: 0;
+    right: 0;
+}
+
+    .social-icons {
+      margin-top: 1rem;
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+    }
+    .social-icons a {
+      color: white;
+      font-size: 1.3rem;
+      transition: color 0.3s ease;
+    }
+    .social-icons a:hover {
+      color: var(--soft-pink);
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .hero-content h1 {
+        font-size: 2.8rem;
+      }
+      .featured-cards {
+        flex-direction: column;
+        align-items: center;
+      }
+      .daily-offers, .birthday-banner {
+        padding: 2rem 2rem;
+        text-align: center;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .daily-offers div, .birthday-banner div {
+        width: 100px; /* Optional: content ko zyada wide na hone dena */
+        margin: 0 auto;   /* Center horizontally */
+        text-align: center; /* Text center align */
+    }
+      .daily-offers, .birthday-banner {
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+    <header>
+        <nav class="container">
+          <a href="home.html">Home</a>
+          <a href="menu.html">Menu</a>
+          <a href="offer.html">Offers</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </header>
+
+  <div class="about-content">
+    <h1>About DuoAura Delights</h1>
+
+    <p>DuoAura Delights is a cozy bakery dedicated to bringing you the finest homemade treats with a personal touch. We pride ourselves on using fresh, high-quality ingredients and traditional recipes handed down through generations. Our passion is to create sweet moments that brighten your day, one bite at a time.</p>
+
+    <h2>Our Story</h2>
+    <p>Started in 2018, DuoAura Delights began as a small kitchen experiment by two best friends who loved baking together. Their passion soon grew into a beloved neighborhood bakery where every pastry and cake tells a story of friendship, love, and dedication. From humble beginnings to becoming a community favorite, DuoAura is all about warmth and sweetness.</p>
+
+    <h2>Meet the Founders</h2>
+    <div class="founders">
+      <div class="founder">
+        <img src="SnehaHande.png" alt="Sneha Hande" />
+        <h3>Sneha Hande</h3>
+        <p>Sneha is the creative heart of DuoAura Delights, specializing in crafting innovative flavors that surprise and delight our customers. Her attention to detail and love for experimenting keeps our menu fresh and exciting.</p>
+      </div>
+      <div class="founder">
+        <img src="KinjalGawali.png" alt="Kinjal Gawali" />
+        <h3>Kinjal Gawali</h3>
+        <p>Kinjal brings the timeless classics to life, perfecting recipes that have become the foundation of our bakery. Her dedication ensures every product tastes just like home, delivering comfort and nostalgia in every bite.</p>
+      </div>
+    </div>
+
+    <h2>Why Choose Us?</h2>
+    <p>We believe in the magic of homemade goodness. Whether you're celebrating a special occasion or craving a simple treat, DuoAura Delights offers a variety of baked goods made with love and care. Our cozy ambiance and friendly service make every visit a delightful experience.</p>
+
+    <h2>Our Values</h2>
+    <div class="values">
+      <h2>What Drives Us</h2>
+      <div class="values-list">
+        <div class="value-item">
+          <h3>Quality Ingredients</h3>
+          <p>We source only the freshest and finest ingredients to ensure every bite is bursting with flavor.</p>
+        </div>
+        <div class="value-item">
+          <h3>Tradition & Innovation</h3>
+          <p>Balancing classic recipes with creative twists keeps our bakery unique and exciting.</p>
+        </div>
+        <div class="value-item">
+          <h3>Community Focus</h3>
+          <p>We love supporting local farmers, suppliers, and participating in neighborhood events.</p>
+        </div>
+        <div class="value-item">
+          <h3>Customer Happiness</h3>
+          <p>Our customers are family. Your smiles and feedback inspire us to do better every day.</p>
+        </div>
+      </div>
+    </div>
+
+    <h2>Community Involvement</h2>
+    <p>At DuoAura Delights, we believe in giving back. We actively participate in local charity events, sponsor baking workshops for kids, and collaborate with food banks to help those in need. Our mission is to spread sweetness beyond just our bakery walls.</p>
+
+    <h2>What Our Customers Say</h2>
+    <div class="testimonials">
+      <div class="testimonial-item">
+        "The best bakery in town! Every pastry feels homemade and packed with love. Sneha and Kinjal’s creations never disappoint."
+        <div class="testimonial-author">— Riya Sharma</div>
+      </div>
+      <div class="testimonial-item">
+        "Cozy atmosphere and friendly staff make every visit a joy. Their cakes are perfect for every celebration!"
+        <div class="testimonial-author">— Aditya Mehta</div>
+      </div>
+      <div class="testimonial-item">
+        "I love how they blend tradition with new flavors. DuoAura Delights is my go-to spot for sweet treats."
+        <div class="testimonial-author">— Priya Desai</div>
+      </div>
+    </div>
+
+    <p>Thank you for being part of our journey and allowing DuoAura Delights to sweeten your life!</p>
+  </div>
+
+  <footer>
+    <p>©️ 2025 DuoAura Delight. All Rights Reserved.</p>
+    <div class="social-icons" role="navigation" aria-label="Social media links">
+      <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+      <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+    </div>
+  </footer>
+</body>
+</html>

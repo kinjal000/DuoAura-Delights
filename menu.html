@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DuoAura Delight -Menu</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --soft-pink: #F4C6D4;
+      --pastel-peach: #F9D2B8;
+      --chocolate-brown: #4A2C26;
+      --cream-white: #F8F6F3;
+      --berry-purple: #7D3250;
+      --vanilla-cream: #F3E1CE;
+      --dusty-rose: #D6A7B1;
+    }
+
+
+body {
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+  background-color: var(--cream-white);
+  color: var(--chocolate-brown);
+}
+h1, h2, h3, h4 {
+  font-family: 'Quicksand', sans-serif;
+  margin: 0;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  display: block;
+  border-radius: 8px;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+header {
+  background: var(--cream-white);
+  padding: 1rem 0;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--chocolate-brown);
+}
+nav a:hover {
+  color: var(--berry-purple);
+  text-decoration: underline;
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
+/* Intro section */
+.intro {
+  max-width: 900px;
+  margin: 30px auto 10px;
+  padding: 0 20px;
+  font-size: 1.2rem;
+  text-align: center;
+  color: var(--berry-purple);
+}
+
+/* Menu container with flexbox */
+.menu-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto 50px;
+  padding: 0 20px;
+  gap: 25px;
+}
+
+/* Each product card */
+.product-card {
+  background-color: var(--vanilla-cream);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width: 260px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  transition: transform 0.2s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+}
+
+.product-card img {
+  width: 220px;
+  height: 150px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.product-name {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+  color: var(--chocolate-brown);
+  text-align: center;
+}
+
+.product-price {
+  color: var(--berry-purple);
+  font-weight: 600;
+  margin-bottom: 8px;
+  font-size: 1rem;
+}
+
+.rating {
+  color: #FFD700; /* Gold color for stars */
+  margin-bottom: 12px;
+  font-size: 1.1rem;
+}
+
+.add-cart-btn {
+  background-color: var(--berry-purple);
+  border: none;
+  color: var(--vanilla-cream);
+  padding: 10px 25px;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-cart-btn:hover {
+  background-color: var(--dusty-rose);
+}
+
+/* Footer */
+footer {
+  margin-top: 4rem;
+  padding: 2rem 0;
+  text-align: center;
+  background: var(--vanilla-cream);
+  color: var(--berry-purple);
+  font-family: 'Quicksand', sans-serif;
+}
+.social-icons {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.social-icons a {
+  color: var(--berry-purple);
+  font-size: 1.3rem;
+  transition: color 0.3s ease;
+}
+.social-icons a:hover {
+  color: var(--soft-pink);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .menu-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .product-card {
+    width: 80%;
+  }
+}
+
+
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav class="container">
+      <a href="home.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="offer.html">Offers</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Intro text -->
+
+  <div class="intro">
+    <p>Welcome to DuoAura Delights delicious dessert menu! Choose from our finest sweets, carefully baked for every craving.</p>
+  </div>
+
+  <!-- Menu items container -->
+
+  <div class="menu-container">
+    <div class="product-card">
+        <img src="RedVelvetTiramisuCake.png" alt="Carrot Cake" />
+        <div class="product-name">Red Velvet Tiramisu Cake</div>
+        <div class="product-price">$12.00</div>
+        <div class="rating">⭐⭐⭐⭐☆</div>
+        <button class="add-cart-btn">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="PumpkinTart.png" alt="Pumpkin Pie" />
+        <div class="product-name">Pumpkin Tart</div>
+        <div class="product-price">$5.75</div>
+        <div class="rating">⭐⭐⭐⭐⭐</div>
+        <button class="add-cart-btn">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="HazelnutDonuts.png" alt="Hazelnut Macaron" />
+        <div class="product-name">Hazelnut Donuts</div>
+        <div class="product-price">$2.25</div>
+        <div class="rating">⭐⭐⭐⭐⭐</div>
+        <button class="add-cart-btn">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="MochaBrownie.png" alt="Mocha Brownie" />
+        <div class="product-name">Mocha Brownie</div>
+        <div class="product-price">$3.75</div>
+        <div class="rating">⭐⭐⭐⭐⭐</div>
+        <button class="add-cart-btn">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="DryFruitCookie.png" alt="Red Velvet Slice" />
+        <div class="product-name">Dry Fruit Cookie</div>
+        <div class="product-price">$4.75</div>
+        <div class="rating">⭐⭐⭐⭐⭐</div>
+        <button class="add-cart-btn">Add to Cart</button>
+      </div>      
+    <!-- Macarons -->
+    <div class="product-card">
+      <img src="ClassicMacaron.png" alt="Classic Macaron" />
+      <div class="product-name">Classic Macaron</div>
+      <div class="product-price">$4.50</div>
+      <div class="rating">⭐⭐⭐⭐☆</div>
+      <button class="add-cart-btn">Add to Cart</button>
+    </div>
+    <div class="product-card">
+      <img src="RoseMacaron.png" alt="Rose Macaron" />
+      <div class="product-name">Rose Macaron</div>
+      <div class="product-price">$5.00</div>
+      <div class="rating">⭐⭐⭐⭐⭐</div>
+      <button class="add-cart-btn">Add to Cart</button>
+    </div>
+    <div class="product-card">
+        <img src="MatchaEclairs.png" alt="Matcha Roll" />
+        <div class="product-name">Matcha Eclairs</div>
+        <div class="product-price">$4.20</div>
+        <div class="rating">⭐⭐⭐⭐☆</div>
+        <button class="add-cart-btn">Add to Cart</button>
+      </div>
+<!-- Cupcakes -->
+<div class="product-card">
+  <img src="VanillaCupcake.png" alt="Vanilla Cupcake" />
+  <div class="product-name">Vanilla Cupcake</div>
+  <div class="product-price">$3.00</div>
+  <div class="rating">⭐⭐⭐⭐☆</div>
+  <button class="add-cart-btn">Add to Cart</button>
+</div>
+<div class="product-card">
+  <img src="ChocolateCupcake.png" alt="Chocolate Cupcake" />
+  <div class="product-name">Chocolate Cupcake</div>
+  <div class="product-price">$3.50</div>
+  <div class="rating">⭐⭐⭐⭐⭐</div>
+  <button class="add-cart-btn">Add to Cart</button>
+</div>
+
+<!-- Brownies -->
+<div class="product-card">
+  <img src="FudgeBrownie.png" alt="Fudge Brownie" />
+  <div class="product-name">Fudge Brownie</div>
+  <div class="product-price">$4.00</div>
+  <div class="rating">⭐⭐⭐⭐⭐</div>
+  <button class="add-cart-btn">Add to Cart</button>
+</div>
+<div class="product-card">
+  <img src="WalnutBrownie.png" alt="Walnut Brownie" />
+  <div class="product-name">Walnut Brownie</div>
+  <div class="product-price">$4.50</div>
+  <div class="rating">⭐⭐⭐⭐☆</div>
+  <button class="add-cart-btn">Add to Cart</button>
+</div>
+
+<!-- Cookies -->
+<div class="product-card">
+  <img src="ChocolateChipCookie.png" alt="Chocolate Chip Cookie" />
+  <div class="product-name">Chocolate Chip Cookie</div>
+  <div class="product-price">$2.50</div>
+  <div class="rating">⭐⭐⭐⭐⭐</div>
+  <button class="add-cart-btn">Add to Cart</button>
+</div>
+<div class="product-card">
+  <img src="RedVelvetCookie.png" alt="Oatmeal Cookie" />
+  <div class="product-name">Red Velvet Cookie</div>
+  <div class="product-price">$2.00</div>
+  <div class="rating">⭐⭐⭐⭐☆</div>
+  <button class="add-cart-btn">Add to Cart</button>
+</div>
+
+<!-- Sprinkle Cupcakes -->
+<div class="product-card">
+  <img src="SprinkleCupcakePink.png" alt="Sprinkle Cupcake Pink" />
+  <div class="product-name">Sprinkle Cupcake Pink</div>
+  <div class="product-price">$3.75</div>
+  <div class="rating">⭐⭐⭐⭐⭐</div>
+  <button class="add-cart-btn">Add to Cart</button>
+</div>
+<div class="product-card">
+  <img src="SprinkleCupcakeBlue.png" alt="Sprinkle Cupcake Blue" />
+  <div class="product-name">Sprinkle Cupcake Blue</div>
+  <div class="product-price">$3.75</div>
+  <div class="rating">⭐⭐⭐⭐☆</div>
+  <button class="add-cart-btn">Add to Cart</button>
+</div>
+
+<!-- Layered Cake -->
+<div class="product-card">
+  <img src="ChocolateLayeredCake.png" alt="Chocolate Layered Cake" />
+  <div class="product-name">Chocolate Layered Cake</div>
+  <div class="product-price">$15.00</div>
+  <div class="rating">⭐⭐⭐⭐⭐</div>
+  <button class="add-cart-btn">Add to Cart</button>
+</div>
+<div class="product-card">
+  <img src="VanillaLayeredCake.png" alt="Vanilla Layered Cake" />
+  <div class="product-name">Vanilla Layered Cake</div>
+  <div class="product-price">$14.00</div>
+  <div class="rating">⭐⭐⭐⭐☆</div>
+  <button class="add-cart-btn">Add to Cart</button>
+</div>
+
+<!-- Eclairs -->
+<div class="product-card">
+  <img src="Eclair.png" alt="Chocolate Eclair" />
+  <div class="product-name"> Eclair</div>
+  <div class="product-price">$5.50</div>
+  <div class="rating">⭐⭐⭐⭐⭐</div>
+  <button class="add-cart-btn">Add to Cart</button>
+</div>
+<div class="product-card">
+  <img src="FruitEclair.png" alt="Vanilla Eclair" />
+  <div class="product-name">Fruit Eclair</div>
+  <div class="product-price">$5.00</div>
+  <div class="rating">⭐⭐⭐⭐☆</div>
+  <button class="add-cart-btn">Add to Cart</button>
+</div>
+
+<!-- Muffins -->
+<div class="product-card">
+  <img src="BlueberryMuffin.png" alt="Blueberry Muffin" />
+  <div class="product-name">Blueberry Muffin</div>
+  <div class="product-price">$3.25</div>
+  <div class="rating">⭐⭐⭐⭐⭐</div>
+  <button class="add-cart-btn">Add to Cart</button>
+</div>
+<div class="product-card">
+  <img src="RaspberryMuffins.png" alt="Chocolate Chip Muffin" />
+  <div class="product-name">Raspberry Muffins</div>
+  <div class="product-price">$3.50</div>
+  <div class="rating">⭐⭐⭐⭐☆</div>
+  <button class="add-cart-btn">Add to Cart</button>
+</div>
+
+<!-- Cheesecake -->
+<div class="product-card">
+  <img src="StrawberryCheesecake.png" alt="Strawberry Cheesecake" />
+  <div class="product-name">Strawberry Cheesecake</div>
+  <div class="product-price">$6.00</div>
+  <div class="rating">⭐⭐⭐⭐⭐</div>
+  <button class="add-cart-btn">Add to Cart</button>
+</div>
+<div class="product-card">
+  <img src="MiniPistachioandCoffeeCheesecake.png" alt="Classic Cheesecake" />
+  <div class="product-name">Mini Pistachio and Coffee Cheesecake</div>
+  <div class="product-price">$5.50</div>
+  <div class="rating">⭐⭐⭐⭐☆</div>
+  <button class="add-cart-btn">Add to Cart</button>
+</div>
+
+<!-- Donuts -->
+<div class="product-card">
+  <img src="GlazedDonut.png" alt="Glazed Donut" />
+  <div class="product-name">Glazed Donut</div>
+  <div class="product-price">$2.75</div>
+  <div class="rating">⭐⭐⭐⭐⭐</div>
+  <button class="add-cart-btn">Add to Cart</button>
+</div>
+<div class="product-card">
+  <img src="GingerbreadCoffeeBakedDonuts.png" alt="Chocolate Donut" />
+  <div class="product-name">Gingerbread Coffee Baked Donuts</div>
+  <div class="product-price">$3.00</div>
+  <div class="rating">⭐⭐⭐⭐☆</div>
+  <button class="add-cart-btn">Add to Cart</button>
+</div>
+
+<!-- Fruit Tart -->
+<div class="product-card">
+  <img src="MixedFruitTart.png" alt="Mixed Fruit Tart" />
+  <div class="product-name">Mixed Fruit Tart</div>
+  <div class="product-price">$7.00</div>
+  <div class="rating">⭐⭐⭐⭐⭐</div>
+  <button class="add-cart-btn">Add to Cart</button>
+</div>
+<div class="product-card">
+  <img src="LemonTart.png" alt="Strawberry Tart" />
+  <div class="product-name">Lemon Tart</div>
+  <div class="product-price">$6.50</div>
+  <div class="rating">⭐⭐⭐⭐☆</div>
+  <button class="add-cart-btn">Add to Cart</button>
+</div>
+
+<!-- Croissant -->
+<div class="product-card">
+  <img src="ButterCroissant.png" alt="Butter Croissant" />
+  <div class="product-name">Butter Croissant</div>
+  <div class="product-price">$3.00</div>
+  <div class="rating">⭐⭐⭐⭐⭐</div>
+  <button class="add-cart-btn">Add to Cart</button>
+</div>
+<div class="product-card">
+  <img src="Pistachecroissant.png" alt="Chocolate Chip Muffin" />
+  <div class="product-name">Pistache croissant</div>
+  <div class="product-price">$3.50</div>
+  <div class="rating">⭐⭐⭐⭐☆</div>
+  <button class="add-cart-btn">Add to Cart</button>
+</div>
+
+  </div>
+
+  <!-- Footer -->
+
+  <footer>
+    <p>©️ 2025 DuoAura Delight. All Rights Reserved.</p>
+    <div class="social-icons" role="navigation" aria-label="Social media links">
+      <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+      <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+    </div>
+  </footer>
+</body>
+</html>
+
